@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <div class="main">
+        <form  id="calc" onsubmit="calc(); return false">
+            <label for="temp" id="input"> PLEASE ENTER THE TEMPERATURE</label>
+            <br/>
+            <br>
+            <input type="number" name="temperature"  id="temp" placeholder="Enter Temperature">
+            <select name="temp_diff" id="temp_diff">
+                <option value="cel">Celsius</option>
+                <option value="far">Fahrenheit </option>
+            </select>
+            <br/>
+            <input type="submit" name="temp" id="submit">
+            <br/>
+            <br>
+            <span id="result" >Answer</span>
+        
+        
+            </form>
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>
